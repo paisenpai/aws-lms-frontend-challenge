@@ -1,0 +1,242 @@
+/* New styles for signup page - mirrors login but with reversed column order */
+.authPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, var(--color-space-purple) 0%, var(--color-space-dark) 100%);
+  padding: var(--spacing-lg);
+}
+
+.splitContainer {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 600px;
+  background: rgba(26, 11, 46, 0.6);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(123, 44, 191, 0.3);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Form Column - Left side for signup */
+.formColumn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-2xl);
+  background: rgba(15, 6, 30, 0.4);
+}
+
+.formContent {
+  width: 100%;
+  max-width: 400px;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: var(--spacing-xl);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+  transition: color var(--transition-base);
+}
+
+.backLink:hover {
+  color: var(--color-white);
+}
+
+.formHeader {
+  margin-bottom: var(--spacing-xl);
+}
+
+.formHeader h1 {
+  font-size: var(--font-size-4xl);
+  color: var(--color-white);
+  margin-bottom: var(--spacing-sm);
+  font-weight: 700;
+}
+
+.formHeader p {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.formGroup label {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.formGroup input {
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(168, 85, 247, 0.3);
+  border-radius: 50px;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  transition: all var(--transition-base);
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: var(--color-purple-primary);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.1);
+}
+
+.formGroup input::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.submitButton {
+  padding: var(--spacing-md) var(--spacing-xl);
+  background: linear-gradient(135deg, var(--color-purple-primary) 0%, var(--color-pink-primary) 100%);
+  color: var(--color-white);
+  border: none;
+  border-radius: 50px;
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.4);
+  margin-top: var(--spacing-md);
+}
+
+.submitButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px rgba(168, 85, 247, 0.6);
+}
+
+.formFooter {
+  text-align: center;
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.formFooter p {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+}
+
+.formFooter a {
+  color: var(--color-purple-light);
+  font-weight: 600;
+  transition: color var(--transition-base);
+}
+
+.formFooter a:hover {
+  color: var(--color-pink-primary);
+  text-decoration: underline;
+}
+
+/* Illustration Column - Right side for signup */
+.illustrationColumn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-2xl);
+  background: linear-gradient(135deg, rgba(123, 44, 191, 0.2) 0%, rgba(88, 28, 135, 0.2) 100%);
+  position: relative;
+}
+
+.illustrationColumn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 20% 50%, rgba(168, 85, 247, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.illustrationContent {
+  text-align: center;
+  z-index: 1;
+  max-width: 400px;
+}
+
+.illustrationPlaceholder {
+  margin-bottom: var(--spacing-xl);
+}
+
+.mascotPlaceholder {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto var(--spacing-lg);
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.3) 0%, rgba(236, 72, 153, 0.3) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  border: 3px solid rgba(168, 85, 247, 0.5);
+  box-shadow: 0 10px 40px rgba(168, 85, 247, 0.3);
+}
+
+.illustrationContent h2 {
+  font-size: var(--font-size-3xl);
+  color: var(--color-white);
+  margin-bottom: var(--spacing-md);
+  font-weight: 700;
+}
+
+.illustrationContent p {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .splitContainer {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .formColumn {
+    order: 1;
+    padding: var(--spacing-xl);
+  }
+
+  .illustrationColumn {
+    order: 2;
+    padding: var(--spacing-xl);
+  }
+
+  .mascotPlaceholder {
+    width: 150px;
+    height: 150px;
+    font-size: 60px;
+  }
+
+  .illustrationContent h2 {
+    font-size: var(--font-size-2xl);
+  }
+
+  .illustrationContent p {
+    font-size: var(--font-size-base);
+  }
+
+  .formHeader h1 {
+    font-size: var(--font-size-3xl);
+  }
+}
