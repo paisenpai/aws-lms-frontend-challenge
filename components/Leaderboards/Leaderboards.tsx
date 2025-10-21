@@ -1,12 +1,12 @@
 import styles from "./Leaderboards.module.css"
 
 const leaderboardData = [
-  { rank: "4th", name: "Anna Schmidt", department: "Security and Networking", points: "100,000 pts", avatar: "👩" },
-  { rank: "7th", name: "Yusuf Sayed", department: "Security and Networking", points: "100,000 pts", avatar: "👨" },
-  { rank: "5th", name: "Anna Schmidt", department: "Security and Networking", points: "100,000 pts", avatar: "👩" },
-  { rank: "8th", name: "Yusuf Sayed", department: "Security and Networking", points: "100,000 pts", avatar: "👨" },
-  { rank: "6th", name: "Anna Schmidt", department: "Security and Networking", points: "100,000 pts", avatar: "👩" },
-  { rank: "9th", name: "Yusuf Sayed", department: "Security and Networking", points: "100,000 pts", avatar: "👨" },
+  { rank: "4th", name: "Test Name 1", department: "Security and Networking", points: "100,000 pts", avatar: "👩" },
+  { rank: "7th", name: "Test Name 2", department: "Data Analytics", points: "100,000 pts", avatar: "👨" },
+  { rank: "5th", name: "Test Name 3", department: "Artificial Intelligence", points: "100,000 pts", avatar: "👩" },
+  { rank: "8th", name: "Test Name 4", department: "Security and Networking", points: "100,000 pts", avatar: "👨" },
+  { rank: "6th", name: "Test Name 5", department: "Security and Networking", points: "100,000 pts", avatar: "👩" },
+  { rank: "9th", name: "Test Name 6", department: "Security and Networking", points: "100,000 pts", avatar: "👨" },
 ]
 
 export default function Leaderboards() {

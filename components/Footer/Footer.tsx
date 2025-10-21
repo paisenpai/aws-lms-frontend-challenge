@@ -33,7 +33,7 @@ export default function Footer() {
         <div className={styles.footerGrid}>
           <div className={styles.footerBrand}>
             <h3>Skill Builder Departments</h3>
-            <p>Learn faster. Skill up smarter.</p>
+            <p>Lorem Ipsum Dolor Sit Amet</p>
 
             <div className={styles.socialIcons}>
               <a href="#" className={styles.socialIcon} aria-label="Facebook">
